@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="396.0" prefWidth="437.0" style="-fx-background-color: #63748e;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AddFieldController">
+   <children>
+      <StackPane onKeyPressed="#addFieldToTableWithKey" prefHeight="396.0" prefWidth="437.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Group>
+               <children>
+                  <Label text="Add field to selected table" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <StackPane.margin>
+                  <Insets top="-270.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <TextField fx:id="tableName" prefHeight="30.0" prefWidth="200.0" promptText="Table" />
+               </children>
+               <StackPane.margin>
+                  <Insets top="-180.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <TextField fx:id="fieldName" prefHeight="30.0" prefWidth="200.0" promptText="Field" />
+               </children>
+               <StackPane.margin>
+                  <Insets top="-80.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <MenuButton fx:id="fieldType" alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #4958B7;" text="Field Type" textAlignment="CENTER" textFill="WHITE">
+                    <items>
+                      <MenuItem fx:id="stringType" mnemonicParsing="false" onAction="#changeToString" text="String" />
+                      <MenuItem fx:id="integerType" mnemonicParsing="false" onAction="#changeToInteger" text="Integer" />
+                        <MenuItem fx:id="doubleType" mnemonicParsing="false" onAction="#changeToDouble" text="Double" />
+                    </items>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </MenuButton>
+               </children>
+               <StackPane.margin>
+                  <Insets top="20.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <Button fx:id="cancelBut" mnemonicParsing="false" onMouseClicked="#closeWindow" text="Cancel">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <StackPane.margin>
+                  <Insets right="130.0" top="170.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <Button fx:id="submitButton" mnemonicParsing="false" onMouseClicked="#addFieldToTable" text="Submit">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <StackPane.margin>
+                  <Insets left="130.0" top="170.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <Label fx:id="warningBox" textFill="#ff4a4a">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <StackPane.margin>
+                  <Insets top="280.0" />
+               </StackPane.margin>
+            </Group>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

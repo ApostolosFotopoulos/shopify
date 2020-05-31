@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GeneralPurpose.Login_FormController">
+   <children>
+      <StackPane fx:id="stackPanel" layoutX="211.0" onKeyPressed="#tryToLoginWithKey" prefHeight="546.0" prefWidth="500.0" style="-fx-background-color: #63748e;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Group>
+               <children>
+                  <MenuButton fx:id="menu_button" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #4958B7;" text="User Type" textAlignment="CENTER" textFill="WHITE">
+                    <items>
+                      <MenuItem fx:id="customer_pick" mnemonicParsing="false" onAction="#changeToCustomer" text="Customer" />
+                      <MenuItem fx:id="admin_pick" mnemonicParsing="false" onAction="#changeToAdmin" text="Admin" />
+                    </items>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </MenuButton>
+               </children>
+               <StackPane.margin>
+                  <Insets bottom="280.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <Label prefHeight="31.0" prefWidth="200.0" text="Username" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <StackPane.margin>
+                  <Insets bottom="170.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <TextField fx:id="usrname" prefHeight="31.0" prefWidth="200.0" />
+               </children>
+               <StackPane.margin>
+                  <Insets bottom="100.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <Label prefHeight="31.0" prefWidth="200.0" text="Password" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <StackPane.margin>
+                  <Insets bottom="40.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <PasswordField fx:id="passwd" layoutY="10.0" prefHeight="31.0" prefWidth="200.0" />
+               </children>
+               <StackPane.margin>
+                  <Insets bottom="-25.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <Button fx:id="submitButton" mnemonicParsing="false" onMouseClicked="#tryToLogin" prefHeight="26.0" prefWidth="200.0" text="Login">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+               <StackPane.margin>
+                  <Insets top="140.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <Hyperlink onMouseClicked="#createNewAccount" text="Create new Customer Account ? " textFill="WHITE" />
+               </children>
+               <StackPane.margin>
+                  <Insets top="230.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <Label fx:id="warningBox" textFill="#ff4a4a">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <StackPane.margin>
+                  <Insets bottom="-310.0" />
+               </StackPane.margin>
+            </Group>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

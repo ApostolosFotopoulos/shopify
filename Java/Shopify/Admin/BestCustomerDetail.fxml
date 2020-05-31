@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.BestCustomerDetailController">
+   <children>
+      <StackedBarChart fx:id="bestCustomersChart" layoutX="-17.0" layoutY="-14.0" prefHeight="455.0" prefWidth="746.0" title="Best Customers" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <xAxis>
+          <CategoryAxis label="Customers" fx:id="x">
+               <tickLabelFont>
+                  <Font size="20.0" />
+               </tickLabelFont>
+            </CategoryAxis>
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" label="Money Spent" side="LEFT" />
+        </yAxis>
+      </StackedBarChart>
+   </children>
+</AnchorPane>

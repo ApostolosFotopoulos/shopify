@@ -1,0 +1,234 @@
+/*  Login Form  */
+
+#customer_pick{
+    -fx-background-color:  #4958B7;
+    -fx-border-color:  #4958B7;
+    -fx-border-width: 4 65 4 65 ;
+    -fx-text-alignment: center;
+}
+
+#customer_pick .label{
+    -fx-text-fill: #fff;
+}
+
+#admin_pick{
+    -fx-background-color:  #4958B7;
+    -fx-border-color:  #4958B7;
+    -fx-border-width: 4 65 4 65 ;
+    -fx-text-alignment: center;
+}
+
+#admin_pick .label{
+    -fx-text-fill: #fff;
+}
+
+#customer_pick:focused {
+    -fx-background-color:  #2E88FF;
+    -fx-border-color:  #2E88FF;
+    -fx-border-width: 4 65 4 65 ;
+    -fx-text-alignment: center;
+}
+
+#admin_pick:focused {
+    -fx-background-color:  #2E88FF;
+    -fx-border-color:  #2E88FF;
+    -fx-border-width: 4 65 4 65 ;
+    -fx-text-alignment: center;
+}
+
+/* Used By : AddProduct,SignUpAdmin,SignUpCustomer */
+
+#submitButton{
+    -fx-background-color: 
+        linear-gradient(#ffd65b, #e68400),
+        linear-gradient(#ffef84, #f2ba44),
+        linear-gradient(#ffea6a, #efaa22),
+        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+#cancelBut{
+	-fx-background-color:
+		linear-gradient(#d12332, #d12332),
+        linear-gradient(#ffef84, #d12332),
+        linear-gradient(#d12332, #d12332),
+        linear-gradient(#ffe657 0%, #d12332 50%, #d12332 100%),
+        linear-gradient(#d12332 0%, #d12332 50%, #d12332 100%),
+        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+/* Used By : CustomersOptions(show Products) */
+#vboxStyle{
+    -fx-background-color:  #63748e;
+}
+ 
+ /* Used By : OrderForm */
+ #credit_card{
+    -fx-background-color:  #4958B7;
+    -fx-border-color:  #4958B7;
+    -fx-border-width: 4 111 4 111 ;
+    -fx-text-alignment: center;
+}
+
+#credit_card .label{
+    -fx-text-fill: #fff;
+}
+
+#credit_card:focused {
+    -fx-background-color:  #2E88FF;
+    -fx-border-color:  #2E88FF;
+    -fx-border-width: 4 111 4 111 ;
+    -fx-text-alignment: center;
+}
+
+#paypal{
+    -fx-background-color:  #4958B7;
+    -fx-border-color:  #4958B7;
+    -fx-border-width: 4 111 4 111 ;
+    -fx-text-alignment: center;
+}
+
+#paypal .label{
+    -fx-text-fill: #fff;
+}
+
+#paypal:focused {
+    -fx-background-color:  #2E88FF;
+    -fx-border-color:  #2E88FF;
+    -fx-border-width: 4 111 4 111 ;
+    -fx-text-alignment: center;
+}
+
+#paysafe{
+    -fx-background-color:  #4958B7;
+    -fx-border-color:  #4958B7;
+    -fx-border-width: 4 111 4 111 ;
+    -fx-text-alignment: center;
+}
+
+#paysafe .label{
+    -fx-text-fill: #fff;
+}
+#paysafe:focused {
+    -fx-background-color:  #2E88FF;
+    -fx-border-color:  #2E88FF;
+    -fx-border-width: 4 111 4 111 ;
+    -fx-text-alignment: center;
+}
+
+#cash{
+    -fx-background-color:  #4958B7;
+    -fx-border-color:  #4958B7;
+    -fx-border-width: 4 111 4 111 ;
+    -fx-text-alignment: center;
+}
+
+#cash .label{
+    -fx-text-fill: #fff;
+}
+#cash:focused {
+    -fx-background-color:  #2E88FF;
+    -fx-border-color:  #2E88FF;
+    -fx-border-width: 4 111 4 111 ;
+    -fx-text-alignment: center;
+}
+
+#fileButton { 
+    -fx-text-fill:  #ffffff;
+    -fx-background-color: #4F637A; 
+    -fx-border-color: #4F637A; 
+} 
+#fileButton:hover{
+    -fx-text-fill:  #ffffff;
+    -fx-background-color:#2D4C70;  
+    -fx-border-color: #2D4C70;  
+}
+
+/* Used by: BestCities */
+#x{
+    -fx-font-size:20px;
+}
+#y{
+    -fx-font-size:20px;
+}
+
+.chart-title{
+    -fx-font-size:20px;
+}
+#bestCitiesChart .chart-bar {
+   -fx-background-color:#60baf2; 
+}
+#bestCustomersChart .chart-bar{
+    -fx-background-color:#1df979; 
+}
+#bar .bar{
+    -fx-background-color:#1df979;
+}
+
+
+/* Used by: AddField */
+#integerType{
+    -fx-background-color:  #4958B7;
+    -fx-border-color:  #4958B7;
+    -fx-border-width: 4 71 4 71 ;
+    -fx-text-alignment: center;
+}
+
+#integerType .label{
+    -fx-text-fill: #fff;
+}
+
+#integerType:focused {
+    -fx-background-color:  #2E88FF;
+    -fx-border-color:  #2E88FF;
+    -fx-border-width: 4 71 4 71 ;
+    -fx-text-alignment: center;
+}
+
+#stringType{
+    -fx-background-color:  #4958B7;
+    -fx-border-color:  #4958B7;
+    -fx-border-width: 4 71 4 71 ;
+    -fx-text-alignment: center;
+}
+
+#stringType .label{
+    -fx-text-fill: #fff;
+}
+
+#stringType:focused {
+    -fx-background-color:  #2E88FF;
+    -fx-border-color:  #2E88FF;
+    -fx-border-width: 4 71 4 71 ;
+    -fx-text-alignment: center;
+}
+
+
+#doubleType{
+    -fx-background-color:  #4958B7;
+    -fx-border-color:  #4958B7;
+    -fx-border-width: 4 71 4 71 ;
+    -fx-text-alignment: center;
+}
+
+#doubleType .label{
+    -fx-text-fill: #fff;
+}
+
+#doubleType:focused {
+    -fx-background-color:  #2E88FF;
+    -fx-border-color:  #2E88FF;
+    -fx-border-width: 4 71 4 71 ;
+    -fx-text-alignment: center;
+}

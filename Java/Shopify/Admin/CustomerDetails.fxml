@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="100.0" prefWidth="1000.0" style="-fx-background-color: #c48f00;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="Admin.CustomerDetailsController">
+   <children>
+      <StackPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Group>
+               <children>
+                  <Label fx:id="customer_id" text="ID" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <StackPane.margin>
+                  <Insets right="600.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <Label fx:id="lastname" text="Lastname" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <StackPane.margin>
+                  <Insets right="200.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <Label fx:id="firstname" text="Firstname" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <StackPane.margin>
+                  <Insets right="-200.0" />
+               </StackPane.margin>
+            </Group>
+            <Group>
+               <children>
+                  <Label fx:id="numOfOrders" text="numOrders" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <StackPane.margin>
+                  <Insets right="-600.0" />
+               </StackPane.margin>
+            </Group>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
